@@ -1,0 +1,26 @@
+<div class="navbar-container">
+    <div class="first-section">
+        <img src="" alt="instagram_logo.png" srcset="">
+        <ul>
+            
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Search</li>
+            <li><i class="fa-regular fa-compass"></i> Explore</li>
+            <li> <i class="fa-regular fa-circle-play"></i> Reels</li>
+            <li><i class="fa-solid fa-paper-plane"></i> Messages</li>
+            <li><i class="fa-regular fa-heart"></i> Notifications</li>
+            <li><i class="fa-regular fa-square-plus"></i> Create</li>
+            <li><i class="fa-solid fa-user"></i> Profil</li>
+        </ul>
+    </div>
+    <div class="second-section">
+        <ul [hidden]="!isShow" class="menu">
+            <li>Settings <i class="fa-solid fa-gear"></i></li>
+            <li>Change Appearance <i class="fa-regular fa-moon"></i></li>
+            <li>Saved <i class="fa-regular fa-bookmark"></i></li>
+        </ul>
+        <ul (click)="isShow = !isShow">
+            <li [class]="isShow? 'menu-show': 'menu-hidden'"><i class="fa-solid fa-bars"></i> More</li>
+        </ul>
+    </div>
+</div>
