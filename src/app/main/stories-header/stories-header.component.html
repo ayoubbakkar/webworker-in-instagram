@@ -1,0 +1,18 @@
+<!--div class="container">
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+    <app-avatar></app-avatar>
+</div-->
+<div class="container">
+    <ng-container *ngFor="let profile of profilePictures">
+      <app-avatar [imageSrc]="profile"></app-avatar>
+    </ng-container>
+</div>
+  
