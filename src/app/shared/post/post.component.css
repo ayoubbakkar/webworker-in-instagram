@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  
+  .profil-name-and-avatar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profil-name-and-avatar p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .interaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .interaction i {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .interaction i.fa-heart {
+    color: red;
+  }
+  
+  .comment-section {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .comment-section p {
+    margin: 5px 0;
+  }
+  
+  .comment-section p span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

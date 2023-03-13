@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="profil-name-and-avatar">
+      <app-avatar [imageSrc]="post.image"></app-avatar>
+      <p>{{post.username}}</p>
+    </div>
+    <div class="image">
+      <img [src]="post.image" [alt]="post.caption">
+    </div>
+    <div class="interaction">
+      <div class="first-section">
+        <i class="fa-regular fa-heart">{{post.likes}}</i>
+        <i class="fa-regular fa-square-plus"></i>
+        <i class="fa-solid fa-paper-plane"></i>
+      </div> 
+    </div>
+    <div *ngFor="let comment of post.comments">
+      <p>{{comment.username}}: {{comment.text}}</p>
+    </div>
+  </div>
+  
