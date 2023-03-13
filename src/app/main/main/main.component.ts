@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
   constructor(private profileService: ProfilService) { }
 
   ngOnInit(): void {
-    this.profileService.getFollowedUserPosts().subscribe(
+    this.profileService.getFollowedUserPosts(5).subscribe(
       res => {
         this.posts=res;
         console.log(this.posts);
