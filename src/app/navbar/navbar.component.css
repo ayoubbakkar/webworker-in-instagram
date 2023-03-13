@@ -23,6 +23,7 @@ ul li:hover i{
     margin-right: 11px;
 }
 .navbar-container{
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 95vh;
@@ -44,3 +45,9 @@ ul li:hover i{
     
 }
 
+.instagram-logo{
+    height: 73px;
+    width: 200px;
+    margin: 0px 0px 19px;
+    padding: 25px 12px 16px;
+}
