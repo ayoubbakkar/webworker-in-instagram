@@ -1,0 +1,26 @@
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profil-container{
+    margin-top: 50px;
+    padding-right: 20%;
+}
+.profil-name-and-avatar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.profil-name-and-avatar p{
+    
+    margin-left: 10px;
+}
+.suggestions-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 5px;
+}
+.suggestions-header-first{
+    font-size: 18px;
+    color: darkgray;
+}

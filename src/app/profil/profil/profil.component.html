@@ -1,1 +1,28 @@
-<p>profil works!</p>
+
+<div class="profil-container">
+    <div class="profil-name-and-avatar">
+        <app-avatar [imageSrc]="imageSrc"></app-avatar>
+        <p>{{username}}</p>
+    </div>
+    <div class="suggestions">
+        <div class="suggestions-header">
+            <p class="suggestions-header-first">Suggestions for you.</p>
+            <p>see all.</p>
+        </div>
+        <div class="suggestions-main">
+            <div class="profil-name-and-avatar">
+                <app-avatar [imageSrc]="imageSrc"></app-avatar>
+                <p>Oumar Bah Sylla</p>
+            </div>
+            <div class="profil-name-and-avatar">
+                <app-avatar [imageSrc]="imageSrc"></app-avatar>
+                <p>Amine Sebti</p>
+            </div>
+            <div class="profil-name-and-avatar">
+                <app-avatar [imageSrc]="imageSrc"></app-avatar>
+                <p>Marouane Tayab</p>
+            </div>
+        </div>
+    </div>
+
+</div>
