@@ -6,7 +6,7 @@
 .navbar-item{
     flex-basis: 1;
     width: 15%;
-    border-right: thin grey;
+    
 }
 .main-item{
     flex-basis: 5;
