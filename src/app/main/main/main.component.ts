@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfilService } from 'src/app/profil/profil/profil.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
+  posts:any;
+  constructor(private profileService: ProfilService) { }
 
   ngOnInit(): void {
+    this.profileService.getFollowedUserPosts().subscribe(
+      res => {
+        this.posts=res;
+        console.log(this.posts);
+        
+      }
+    );
   }
 
 }

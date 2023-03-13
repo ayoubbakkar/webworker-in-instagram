@@ -1,0 +1,17 @@
+.container{
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.header{
+    display: inline-block;
+    margin-top: 50px;
+    display: inline-block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y:hidden;
+    height: 70px;
+    width: 500px;
+}
+.posts{
+    margin-top: 10vh;
+}
