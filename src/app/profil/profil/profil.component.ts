@@ -15,9 +15,11 @@ export class ProfilComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.profilService.getUser().subscribe(res => {
+    this.profilService.getUser(5).subscribe(res => {
         this.username=res.username;  
+        this.imageSrc = res.profile_picture;
     })
+    
     
   }
 
