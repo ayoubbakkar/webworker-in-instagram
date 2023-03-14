@@ -10,6 +10,7 @@ import { AvatarComponent } from './shared/avatar/avatar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StoriesHeaderComponent } from './main/stories-header/stories-header.component';
 import { PostComponent } from './shared/post/post.component';
+import { PostNoWorkerComponent } from './shared/post-no-worker/post-no-worker.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PostComponent } from './shared/post/post.component';
     AvatarComponent,
     
     StoriesHeaderComponent,
-    PostComponent
+    PostComponent,
+    PostNoWorkerComponent
   ],
   imports: [
     BrowserModule,
