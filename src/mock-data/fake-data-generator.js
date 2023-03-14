@@ -1,9 +1,15 @@
-
-
 const fs = require('fs');
 const path = require('path');
 const url = require('url');
 const https = require('https')
+const { readdirSync } = require('fs');
+
+function getRandomImageFileName() {
+  const imageDirPath = path.join(__dirname, '../assets/images');
+  const imageFileNames = readdirSync(imageDirPath);
+  const randomIndex = Math.floor(Math.random() * imageFileNames.length);
+  return imageFileNames[randomIndex];
+}
 
 
 
@@ -14,7 +20,7 @@ const https = require('https')
         id: i,
         userId: Math.floor(Math.random() * numberOfUsers) + 1,
         username : `username ${i} `,
-        image: `../assets/images/post${i}.jpg`,
+        image: `../assets/images/${getRandomImageFileName()}`,
         caption: `Post ${i} caption`,
         likes: Math.floor(Math.random() * 100),
         comments: [],
@@ -82,7 +88,7 @@ const https = require('https')
   
   
 
-  const numberOfPosts = 600;
+  const numberOfPosts = 20000;
   const numberOfUsers = 200;
   
   const posts = generatePosts(numberOfPosts, numberOfUsers);
